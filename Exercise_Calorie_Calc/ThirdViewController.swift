@@ -2,7 +2,7 @@
 //  ThirdViewController.swift
 //  Exercise_Calorie_Calc
 //
-//  Created by user150447 on 1/31/19.
+//  Created by Salil Biswas on 4/3/19.
 //  Copyright © 2019 user150447. All rights reserved.
 //
 
@@ -23,9 +23,12 @@ class ThirdViewController: UIViewController {
     @IBAction func calcCalories(_ sender: Any) {
     
     switch userGender {
+     // formula for calories for both men and women uses the userWeight in pounds
+        
     // formula for burned calories for females
     case "Female":
       caloriesBurned = ((userAge!*0.074)-(userWeight!*0.05741)+(userHeartRate!*0.4472)-20.4022)*userExerciseTime!/4.184
+        
     // formula for burned calories for males
     case "Male":
       caloriesBurned = ((userAge!*0.2017)-(userWeight!*0.09036)+(userHeartRate!*0.6309)-55.0969)*userExerciseTime!/4.184

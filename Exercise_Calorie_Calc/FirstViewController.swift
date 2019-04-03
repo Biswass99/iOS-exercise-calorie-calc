@@ -39,6 +39,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate{
            return
         }
     }
+    // userWeight is in pounds, so users must input their weight in pounds
     
     @IBAction func savePersonalInfo(_ sender: Any) {
         userWeight = Double(yourWeight.text!)
